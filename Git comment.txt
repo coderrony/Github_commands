@@ -1,0 +1,162 @@
+
+
+=> git init
+
+=> nano test.txt (open file for write)
+
+=> git status 
+=> git add . (all file select to go staggin area)
+=> git commit -m "message"  (ready for local repository)
+=> git log (check Histroy)
+=> git log --oneline (show history in one line)
+=> git show 54df32dsg  (show git history by commit id)
+=> git checkout test.txt (change modification undo)
+=> git add . && git commit -m "thir commit" (git add and commit together)
+=> git checkout 32fe24f  (go back to previous commit)
+=> git checkout master  (return back to all commit)
+
+.gitignore 
+----------   .gitignore file save which file or folder not stageing  -------
+test.txt (just this file ignore)
+.env  (just this file ignore)
+*.txt  (all txt extensition file ignore)
+!main.txt (this file is not ignore)
+temp/  (ignore all file in temp folder)
+
+
+=> touch .gitignore  (git ignore file create)
+
+_____________
+
+=> git remote  (check this folder or repositories already connect or not to the remote repositoris)
+
+=> git remote add origin https://github.com/coderrony/life-story.git   (connect to the remote repositories)
+
+=> git remote --v (show the link which you have connect)
+
+----------git clone or pull request
+=> git clone https://github.com/coderrony/life-story.git  (git clone mean orginal folder of remote repositories)
+ 
+=> git push -u origin main (local repositorie to push remote repositories)
+
+=> git pull (show the change remote repositorie)
+
+-----------git branch && merge
+=>  git branch (check branch)
+
+=> git branch branchName (make a new branch)
+
+=> git checkout branchName  (switch the branch)
+
+=> git branch -d branchName (delete the branch)
+
+=> git checkout -b "branchName" (create and switch an one command ) 
+
+=> git merge feature2  (merge two branch )
+
+=> if want marge file to send to remote repositorie first aplly (git pull) then apply  git push -u origin main
+
+---------------- Markdown --------------------
+
+1. how to make a comment 
+   <!-- this is comment -->
+
+2. normal text & new line
+    <br/> or 3 space
+
+3. horizontal rule
+     ___
+
+4. headings
+   # Rony Das
+   ## second
+   ### third
+   ### fourth
+
+5. paragraph
+  <p> this is paragraph tag. </p>
+
+6. italic
+ <i> this italic tak </i>
+  _hi italic_
+8. bold
+   __this bold__
+9. strikethrough
+
+   <del> this is</del>
+   ~~this deleted~~
+
+10. inline code block
+   `this is inline`
+   `<h1>bangladesh</h1>`
+
+
+11. multiple line code block 
+
+```html
+  <html>
+
+    <head> </head>
+    <body> <body>
+
+  </html>
+```
+
+```javascript
+console.log("hello");
+```
+
+```c++
+ c.out("hi")
+```
+
+
+12. list
+
+<ol>
+  <li>item one</li>
+  <li>item two</li>
+</ol>
+
+  1. item 1    
+  2. item three     
+      1. one
+      2. two
+  3. item three  
+  Unorder list:
+  -------------
+- item1
+- item2
+- item3
+  - one
+  - two
+  - three
+
+13. link
+
+## automatic link
+
+https://youtube.com
+
+## disable link
+
+`https://youtube.com`
+## markdown link syntax
+
+[youtube](https://youtube.com)
+
+[youtube] : https://youtube.com
+ 
+
+14. image
+
+![alt text] (./image/me.jpg)
+<img scr="./images/me.jpg" width= "400" title = "profile" />
+
+15. emoji
+
+
+16. table
+
+----------------------End ----------
+
